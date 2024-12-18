@@ -63,3 +63,8 @@ set freecost 50
 set diplbulbcost 50
 set diplgoldcost 50
 set conquercost 50
+
+set minplayers 0
+set timeout 10
+hard
+start

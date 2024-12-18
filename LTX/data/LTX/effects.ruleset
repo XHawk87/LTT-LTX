@@ -325,9 +325,9 @@ type    = "Max_Trade_Routes"
 value   = 0
 
 ; Base vision range - radius of vision is sqrt(5) = 2.24 - this is intentionally smaller than the city working area
-[effect_city_vision]
-type    = "City_Vision_Radius_Sq"
-value   = 5
+;[effect_city_vision]
+;type    = "City_Vision_Radius_Sq"
+;value   = 5
 
 ; 5 + 5 = 10
 [effect_city_vision_1]
@@ -339,22 +339,22 @@ reqs    =
     }
 
 ; Vision benefit from mountains (for every land unit)
-[effect_mountains_vision]
-type    = "Unit_Vision_Radius_Sq"
-value   = 18
-reqs    =
-    { "type", "name", "range", "present"
-      "Terrain", "Mountains", "Local", TRUE
-;      "UnitClass", "Land", "Local", FALSE
-;      "UnitClass", "Small Land", "Local", FALSE
-;      "UnitClass", "Big Land", "Local", FALSE
-;      "UnitClass", "Merchant", "Local", FALSE
-      "UnitClass", "Sea", "Local", FALSE
-      "UnitClass", "Trireme", "Local", FALSE
-      "UnitClass", "Helicopter", "Local", FALSE
-      "UnitClass", "Air", "Local", FALSE
-      "UnitClass", "Missile", "Local", FALSE
-    }
+;[effect_mountains_vision]
+;type    = "Unit_Vision_Radius_Sq"
+;value   = 18
+;reqs    =
+;    { "type", "name", "range", "present"
+;      "Terrain", "Mountains", "Local", TRUE
+;;      "UnitClass", "Land", "Local", FALSE
+;;      "UnitClass", "Small Land", "Local", FALSE
+;;      "UnitClass", "Big Land", "Local", FALSE
+;;      "UnitClass", "Merchant", "Local", FALSE
+;      "UnitClass", "Sea", "Local", FALSE
+;      "UnitClass", "Trireme", "Local", FALSE
+;      "UnitClass", "Helicopter", "Local", FALSE
+;      "UnitClass", "Air", "Local", FALSE
+;      "UnitClass", "Missile", "Local", FALSE
+;    }
 
 ; Movement penalty if ended turn at mountains (for every land unit)
 [effect_mountains_movement]
